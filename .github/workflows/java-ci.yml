@@ -20,8 +20,5 @@ jobs:
           distribution: "temurin"
           java-version: "17"
 
-      - name: Compile and run tests
-        run: |
-          cd src/main/java
-          javac tempconverter/TemperatureConverter.java tempconverter/TemperatureConverterTest.java
-          java tempconverter.TemperatureConverterTest
+      - name: Build and run tests with Maven
+        run: mvn -B test
