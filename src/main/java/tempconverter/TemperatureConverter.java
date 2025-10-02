@@ -16,7 +16,7 @@ public class TemperatureConverter {
     public static void main(String[] args) {
         TemperatureConverter converter = new TemperatureConverter();
 
-        double fahrenheit = 100.0;
+        double fahrenheit = 80.0;
         double celsius = converter.fahrenheitToCelsius(fahrenheit);
         System.out.println(fahrenheit + "°F = " + celsius + "°C");
 
